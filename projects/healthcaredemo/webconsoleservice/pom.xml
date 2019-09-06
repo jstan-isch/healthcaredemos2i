@@ -14,7 +14,7 @@
     <!-- http ports that are opened! -->
     <http.port>8080</http.port>
     
-    <fuse.version>6.3.0.redhat-067</fuse.version>
+    <fuse.version>6.2.1.redhat-084</fuse.version>
 
     <!-- Docker & Fabric8 Configs -->
     <docker.from>jboss-fuse-6/fis-java-openshift:1.0</docker.from>
