@@ -55,13 +55,13 @@ Before we get started, first, create a messaging service
 
 Start build and deploying healthcare applications                  
 
-    $ oc new-app -f support/hisesb.json                    
-    $ oc new-app -f support/fhiresb.json
-    $ oc new-app -f support/clinichl7service.json
-    $ oc new-app -f support/laboratoryservice.json
-    $ oc new-app -f support/radiologyservice.json
-    $ oc new-app -f support/registryservice.json
-    $ oc new-app -f support/healthwebconsole.json
+    $ oc new-app -f support_yaml/hisesb.yaml                    
+    $ oc new-app -f support_yaml/fhiresb.yaml
+    $ oc new-app -f support_yaml/clinichl7service.yaml
+    $ oc new-app -f support_yaml/laboratoryservice.yaml
+    $ oc new-app -f support_yaml/radiologyservice.yaml
+    $ oc new-app -f support_yaml/registryservice.yaml
+    $ oc new-app -f support_yaml/healthwebconsole.yaml
 
 Expose all service to route.
 
@@ -72,7 +72,7 @@ Expose all service to route.
 		$ oc expose svc laboratoryservice
 		$ oc expose svc radiologyservice
 
-Go to  https://github.com/weimeilin79/healthcareweb, clone it to your own repository
+Go to https://github.com/openshift-demo/healthcareweb, clone it to your own repository
 And go to 'health.html' and update the urls to your exposed routes. 
 
 	 Replace all
