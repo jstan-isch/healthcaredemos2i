@@ -243,10 +243,17 @@
             },
             "spec": {
                 "ports": [
-                				{
+            				{
+                        "protocol": "TCP",
+                        "port": 8889,
+                        "targetPort": 8889,
+                        "name": "netty"
+                    },
+                    {
                         "protocol": "TCP",
                         "port": 9123,
-                        "targetPort": 9123
+                        "targetPort": 9123,
+                        "name": "websocket"
                     }
                 ],
                 "selector": {
